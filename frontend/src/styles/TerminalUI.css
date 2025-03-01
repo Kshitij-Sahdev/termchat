@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0f0f0f;
+    color: #33ff33;
+  }
+  
+  .terminal {
+    width: 90%;
+    max-width: 1000px;
+    height: 80vh;
+    margin: 40px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.2);
+    background-color: #0c0c0c;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .terminal-header {
+    background-color: #1a1a1a;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: 1px solid #333;
+  }
+  
+  .terminal-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .close { background-color: #ff5f56; }
+  .minimize { background-color: #ffbd2e; }
+  .maximize { background-color: #27c93f; }
+  
+  .terminal-title {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #cccccc;
+  }
+  
+  .terminal-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: rgba(10, 10, 10, 0.95);
+  }
+  
+  .terminal-input-line {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .terminal-input {
+    background-color: transparent;
+    border: none;
+    color: #33ff33;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    width: 100%;
+    padding: 0;
+    outline: none;
+  }
+  
+  .message {
+    margin: 5px 0;
+    word-wrap: break-word;
+  }
+  
+  .message-system {
+    color: #33ccff;
+  }
+  
+  .blink {
+    animation: blink-animation 1s steps(2, start) infinite;
+  }
+  
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+  pre {
+    margin: 0;
+  }
